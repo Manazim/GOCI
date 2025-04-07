@@ -9,9 +9,9 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect(
-  "mongodb+srv://aimanazim539:manzim@thirdeye.oev3a.mongodb.net/?retryWrites=true&w=majority&appName=ThirdEye",
+  "###########", //Replace with mongodb credential
   {
-    dbName: 'GOCI',
+    dbName: 'GOCI', //Replaec with mongodb name
   }
 )
 .then(() => {
