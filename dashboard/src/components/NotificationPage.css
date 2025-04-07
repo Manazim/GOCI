@@ -1,0 +1,95 @@
+.notification-container {
+  padding: 2rem;
+  background: #1e1e1e;
+  border-radius: 8px;
+  margin: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-form label {
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+}
+
+.date-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.date-input-container input {
+  padding-right: 2.5rem;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 0.5rem;
+  pointer-events: none;
+  color: white;
+}
+
+.filter-form button {
+  padding: 0.5rem 1rem;
+  background: #61dafb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: #0d0d0d;
+}
+
+.filter-form button:hover {
+  background: #4ebbf2;
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-item {
+  background: #1e1e1e;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.notification-type {
+  font-weight: bold;
+  color: #61dafb;
+}
+
+.notification-timestamp {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.notification-message {
+  font-size: 1rem;
+  color: #e0e0e0;
+}

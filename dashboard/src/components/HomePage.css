@@ -1,0 +1,123 @@
+.home-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.area-selection {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.area-selection label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.area-selection select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #e0e0e0;
+}
+
+.junction-info {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sensor-readings {
+  padding: 1rem;
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.reading-card {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.reading-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #61dafb;
+}
+
+.reading-card p {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #e0e0e0;
+}
+
+.reading-card:hover {
+  transform: translateY(-5px);
+  border-color: #61dafb;
+}
+
+.timestamp {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.status-alert {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.alert-green {
+  background: rgba(0, 255, 0, 0.2);
+  border: 1px solid green;
+  color: green;
+}
+
+.alert-red {
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid red;
+  color: red;
+}
+
+.trend-analysis-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.trend-analysis-section h3 {
+  color: #61dafb;
+  margin-top: 0;
+}
+
+.fixed-output {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+

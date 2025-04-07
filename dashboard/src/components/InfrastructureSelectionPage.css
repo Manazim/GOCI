@@ -1,0 +1,53 @@
+.infra-selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .infra-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .infra-card {
+    width: 200px;
+    height: 150px;
+    border: 2px solid #61dafb;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #1e1e1e;
+    transition: transform 0.3s;
+  }
+  
+  .infra-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .infra-card.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .infra-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .infra-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  
