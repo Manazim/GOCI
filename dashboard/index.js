@@ -68,8 +68,8 @@ app.post('/analyzetrend', async (req, res) => {
     
     // Initialize JamAI client with your credentials.
     const jamai = new JamAI({
-      token: process.env.JAMAI_TOKEN || "jamai_sk_fe480cff5e51d9a9ed27d5aed49711a478d340e0cabfa591",
-      projectId: process.env.JAMAI_PROJECT_ID || "proj_1eb722724892ab494e89db7d",
+      token: process.env.JAMAI_TOKEN || "#########", //replace with your jamiabase api
+      projectId: process.env.JAMAI_PROJECT_ID || "#####", // replace with your project ID
       dangerouslyAllowBrowser: false,
     });
     
