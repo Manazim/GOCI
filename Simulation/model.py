@@ -9,7 +9,7 @@ from pymongo.server_api import ServerApi
 import requests  # Required for sending Telegram messages
 
 # MongoDB configuration
-mongo_uri = "mongodb+srv://aimanazim539:manzim@thirdeye.oev3a.mongodb.net/?retryWrites=true&w=majority&appName=ThirdEye"
+mongo_uri = ""
 client = MongoClient(mongo_uri, server_api=ServerApi('1'))
 db_collection = client.GOCI.status
 
@@ -20,8 +20,8 @@ except Exception as e:
     print(f"MongoDB connection error: {e}")
 
 # Telegram credentials
-TELEGRAM_BOT_TOKEN = '7051347273:AAGPpDVNTNx5K2rLvC2pB0on6QssBcC2sn0'
-TELEGRAM_CHAT_ID = '-4725693285'
+TELEGRAM_BOT_TOKEN = ''
+TELEGRAM_CHAT_ID = ''
 
 def send_telegram_message(message):
     """Send an alert message to Telegram."""
@@ -101,10 +101,10 @@ def process_sensor_data(sensor_data):
 
 # Setup Firebase Ingress Pod
 firebaseConfig = {
-    "apiKey": "AIzaSyC1fxZHgfn9lJSAr84k0PyrI3P3XSo04Ro",
-    "authDomain": "goci-aab64.firebaseapp.com",
-    "databaseURL": "https://goci-aab64-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    "storageBucket": "goci-aab64.appspot.com",
+    "apiKey": "",
+    "authDomain": "",
+    "databaseURL": "",
+    "storageBucket": "",
 }
 
 firebase = pyrebase.initialize_app(firebaseConfig)
