@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: analyze-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: analyze
+  template:
+    metadata:
+      labels:
+        app: analyze
+    spec:
+      containers:
+      - name: analyze
+        image: manzim/data-analyze:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
