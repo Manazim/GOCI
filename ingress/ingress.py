@@ -61,10 +61,10 @@ def process_sensor_data(sensor_data):
 # 2. Setup Firebase Ingress Pod
 # -------------------------
 firebaseConfig = {
-    "apiKey": "AIzaSyC1fxZHgfn9lJSAr84k0PyrI3P3XSo04Ro",
-    "authDomain": "goci-aab64.firebaseapp.com",
-    "databaseURL": "https://goci-aab64-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    "storageBucket": "goci-aab64.appspot.com",
+    "apiKey": "###########################", //replace with firebase credential
+    "authDomain": "#################################", 
+    "databaseURL": "###################################",
+    "storageBucket": #############################",
 }
 
 firebase = pyrebase.initialize_app(firebaseConfig)
