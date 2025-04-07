@@ -15,7 +15,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 # --------------------------
 # Function to get ambient temperature from OpenWeather API
-def get_ambient_temperature(city="Muar", api_key="81c60f1022c42dd9f3da5a4cb9dec18d"):
+def get_ambient_temperature(city="Bangsar", api_key="##############################"):
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     try:
         response = requests.get(url)
@@ -30,7 +30,7 @@ def get_ambient_temperature(city="Muar", api_key="81c60f1022c42dd9f3da5a4cb9dec1
 
 def analyze():
     # 1. Connect to MongoDB and fetch sensor data
-    mongo_uri = "mongodb+srv://aimanazim539:manzim@thirdeye.oev3a.mongodb.net/?retryWrites=true&w=majority&appName=ThirdEye"
+    mongo_uri = "############################################"
     client = MongoClient(mongo_uri, server_api=ServerApi('1'))
     db_collection = client.GOCI.sensors
 
