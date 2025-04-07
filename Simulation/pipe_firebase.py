@@ -9,10 +9,10 @@ from pymongo.server_api import ServerApi
 
 # Firebase configuration – replace these with your actual credentials
 firebaseConfig = {
-    "apiKey": "AIzaSyC1fxZHgfn9lJSAr84k0PyrI3P3XSo04Ro",
-    "authDomain": "goci-aab64.firebaseapp.com",
-    "databaseURL": "https://goci-aab64-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    "storageBucket": "goci-aab64.appspot.com",
+    "apiKey": "#######################################",
+    "authDomain": "",
+    "databaseURL": "",
+    "storageBucket": "",
 }
 
 # Initialize Firebase
@@ -20,7 +20,7 @@ firebase = pyrebase.initialize_app(firebaseConfig)
 db = firebase.database()
 
 # MongoDB configuration
-mongo_uri = "mongodb+srv://aimanazim539:manzim@thirdeye.oev3a.mongodb.net/?retryWrites=true&w=majority&appName=ThirdEye"
+mongo_uri = ""
 client = MongoClient(mongo_uri, server_api=ServerApi('1'))
 db_collection = client.GOCI.sensors
 
