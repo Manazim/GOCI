@@ -13,7 +13,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 # --------------------------
 # Connect to MongoDB and fetch sensor data
-mongo_uri = "mongodb+srv://aimanazim539:manzim@thirdeye.oev3a.mongodb.net/?retryWrites=true&w=majority&appName=ThirdEye"
+mongo_uri = "#####################################################e"
 client = MongoClient(mongo_uri, server_api=ServerApi('1'))
 
 # Fetch sensor data from "sensors" collection
