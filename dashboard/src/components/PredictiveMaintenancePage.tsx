@@ -139,7 +139,7 @@ const PredictiveMaintenancePage: React.FC = () => {
       
       // Google AI Studio integration (inline; WARNING: Exposing API key is insecure for production)
       const { GoogleGenerativeAI } = await import('@google/generative-ai');
-      const apiKey = "AIzaSyAPwrv-rCesDe_Wy8YyNg9WcjScxbu91zM"; // Replace with your API key
+      const apiKey = "################"; // Replace with your API key
       const genAI = new GoogleGenerativeAI(apiKey);
       const model = genAI.getGenerativeModel({
         model: "gemini-2.5-pro-exp-03-25",
